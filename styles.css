@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff0000, #000000);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff0000, #000000); /* Red and black gradient */
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+}
+
+header h1 .label {
+    color: #ffcc00; /* Yellow color for labels */
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 3.3em;
+}
+
+header p .label {
+    color: #ffcc00; /* Yellow color for labels */
+    font-weight: bold;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Changed to yellow to match the theme */
+    text-align: center;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.thumbnail {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail img {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* Podcast thumbnails specific styling */
+.podcast-thumbnail img {
+    width: auto;
+    height: 250px; /* Fixed height for podcast thumbnails */
+    max-width: 100%;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc00; /* Yellow glow effect on hover */
+}
+
+/* Remove the overlay effect */
+.thumbnail::after {
+    content: none;
+}
